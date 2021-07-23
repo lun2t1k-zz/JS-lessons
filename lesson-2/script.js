@@ -27,6 +27,10 @@ const appData = {
 // do {
 //   let expenseItem = prompt('Введите обязательную статью расходов в этом месяце', ''),
 //       cost = prompt('Во сколько обойдется?', '');
+
+//   if ( (typeof(expenseItem)) === 'string' && (typeof(expenseItem)) != null && (typeof(cost)) != null && expenseItem != '' && cost != '' && expenseItem.length < 50 ) {
+//     console.log('Done!'); 
+//   }
       
 //   appData.expenses[expenseItem] = cost;
   
@@ -37,7 +41,11 @@ let i = 0;
 while (i < 2) {
   let expenseItem = prompt('Введите обязательную статью расходов в этом месяце', ''),
       cost = prompt('Во сколько обойдется?', '');
-      
+  
+  if ( (typeof(expenseItem)) === 'string' && (typeof(expenseItem)) != null && (typeof(cost)) != null && expenseItem != '' && cost != '' && expenseItem.length < 50 ) {
+    console.log('Done!'); 
+  }
+
   appData.expenses[expenseItem] = cost;
   
   i++;
