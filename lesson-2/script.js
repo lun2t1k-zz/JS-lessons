@@ -52,7 +52,7 @@ while (i < 2) {
 }
 
 appData.moneyPerDay = appData.budget / 30;
-// ghdighf
+
 alert('Ежедневный бюджет:' + appData.moneyPerDay);
 
 if (appData.moneyPerDay < 100) {
